@@ -18,11 +18,11 @@
     height: 40px;
 }
 
-#sampa-header {
+#sampa-header, #contact-info, #personal-info {
     display: inline;
 }
 
-#flickr-exp, #flickr-icon, #sampa-exp, #sampa {
+#flickr-exp, #flickr-icon, #sampa-exp, #sampa, #contact, #personal-info, .contactInfoImg {
     float: left;
 }
 
@@ -42,3 +42,12 @@
     margin-top: 15px;
 }
 
+.contactInfoImg {
+    border-style: solid;
+    width: 80px;
+    height: 80px;
+}
+
+p {
+    font-size: 12pt;
+}
