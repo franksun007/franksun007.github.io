@@ -1,1 +1,271 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Frank Sun's Personal Website</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+
+    <link href="css/own-theme.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">FRANK'S WEBPAGE</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#about">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#exp">EXPERIENCE</a>
+                    </li>
+                    <li>
+                        <a href="#">PROJECT</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header" id="about">ABOUT
+                    <small>Frank Sun</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8" id="profile-pic">
+                <img src="public/img/Frank.jpg" class="img-responsive"
+                     alt="Selfie taken by Frank himself, he's cool and chill.">
+            </div>
+
+            <div class="col-md-8">
+                <h3>Personal Info</h3>
+                <p>Hey Sup,</p>
+                <p>My name is Chenfan Sun and people usually reference me as Frank. I was originated from Shanghai
+                China and currently a Junior studying Computer Engineering at University of Washington Seattle Campus.
+                I am a backend guy and interested in various aspects of the filed such as Distributed System and Database.
+                    I haven't been exposed to all aspects of Computer Science like Computer Vision and Artificial Intelligence.
+                I am really excited to take those classes or work on projects related to them.</p>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header" id="exp">EXPERIENCE</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8" id="flickr">
+                <img src="public/img/exp/flickr.png" class="img-responsive" alt="flickr">
+            </div>
+
+
+            <div class="col-md-8">
+                <div id="flickr-header">
+                    <h3 id="flickr-exp"><a href="http://www.flickr.com/about">Intern at Flickr</a> during Summer 2015
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My Flickr page =></h3>
+                    <a href="https://www.flickr.com/photos/132520533@N07/">
+                        <img src="public/img/exp/flickr-icon.png" class="img-responsive" id="flickr-icon" alt="flickr-icon">
+                    </a>
+                </div>
+                <p>
+                    The summer I spent at Flickr was one of the best summer I've ever experienced. It was my honor to
+                    work with the Flickr backend team and two smart engineers, Shawn Cook and Bhautik Joshi, on three projects.
+                </p>
+                <p>
+                    The first one is using
+                    <a href="https://www.docker.com/">docker</a>,
+                    <a href="http://redis.io/">Redis</a> and
+                    <a href="https://www.consul.io/">Consul</a> to build an automated fail-over system. It was a DevOps
+                    projects, but I majorly worked on writing the docker image for Redis and
+                    <a href="http://redis.io/topics/sentinel">Sentinel<a>. I also participated on writing the integrated
+                        distributed test script to
+                        test the functionality of the whole system and test the availability of
+                        <a href="https://github.com/oysterbooks/python-consul-lock">Ephemeral Lock</a> for Consul.
+                </p>
+                <p>
+                    The second one is generating the
+                    <a href="https://support.google.com/webmasters/answer/156184?hl=en">Sitemaps</a> for Flickr using
+                    <a href="https://hadoop.apache.org/">hadoop</a>, <a href="http://oozie.apache.org/">Oozie</a>
+                    and <a href="http://pig.apache.org/">Pig Latin</a>. The project uses Map-Reduce to manipulate
+                    the data on HDFS, concatenate them into links and publish to Google/Bing.
+                </p>
+                <p>
+                    Last one is an Aggregation Framework, a variation for
+                    <a href="https://github.com/yahoo/simplified-lambda">Lambda Architecture</a>.
+                    The idea of Lambda Architecture is fusing the results of both Real-time Computing results and
+                    Batching results. I worked on the implementation of Real-time Computing, specifically the
+                    impl of the <a href="https://storm.apache.org/about/simple-api.html">spouts and bolts</a>
+                    for <a href="https://storm.apache.org/">Storm</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="row"><p>&nbsp;</p></div>
+
+        <div class="row">
+            <div class="col-md-8" id="cse">
+                <img src="public/img/exp/uwcse.png" class="img-responsive" alt="uw cse">
+            </div>
+            <div class="col-md-8">
+                <div id="ta-header">
+                    <h3 id="ta-exp">Teaching Assistant for
+                        <a href="https://courses.cs.washington.edu/courses/cse351/">Hardware/Software Interface</a>
+                    </h3>
+                </div>
+                <p>
+                    Going to be an Undergrad Teaching Assistant for CSE 351, Hardware/Software Interface. The class
+                    is aimed to give student an expose of how computer works (register, cache, memory).
+                </p>
+                <p>
+                    The duty of a TA is helping student ace the class. The TA will give section once a week to students,
+                    which will reiterate instructor's the material through the week and solid their understanding of
+                    all concepts. TA will also grade students' homework, lab and exams. TA will try their best to
+                    solve any questions students have and help them to hit the max of a homework/lab/exam.
+                </p>
+            </div>
+            <div class="col-md-8">
+                <div id="sampa-header">
+                    <h3 id="sampa-exp">Undergrad Research Assistant at</h3>
+                    <img src="public/img/exp/sampa.png" class="img-responsive" id="sampa" alt="uw sampa">
+                </div>
+                <p>
+                    I was once an Undergrad Research Assistant at
+                        <a href="http://sampa.cs.washington.edu/">Computer Architecture Lab - Sampa</a>
+                    (historically meant to stand for <b>sa</b>fe <b>m</b>ulti-<b>p</b>rocessing <b>a</b>rchitectures)
+                    working with <a href="http://homes.cs.washington.edu/~bholt/">Brandon Holt</a>, an amazing PhD student.
+                </p>
+                <p>
+                    The project I worked on intended to implement the
+                    <a href="https://www.usenix.org/conference/osdi14/technical-sessions/presentation/narula">Phase Reconciliation</a>
+                    feature to some open sourced database such as Redis Cluster. However, it was hard to find a good candidates
+                    for implementing Phase Reconciliation in all aspects - performance, threading and persistence (CAP).
+                    For example, Redis Cluster will be a good candidate, but all instances are single threading, which means the cost
+                    of reconciliation process will be much higher as all the data go through Networks comparing to multi-threading databases.
+                    The project then turns to a benchmarking projects aimed to find the good candidates for Phase Reconciliation.
+                </p>
+                <p>
+                    The project used
+                    <a href="https://github.com/brianfrankcooper/YCSB">YCSB</a>
+                    as the major benchmark tool. We benchmarked
+                    <a href="http://redis.io/topics/cluster-spec">Redis Cluster</a>,
+                    <a href="http://cassandra.apache.org/">Cassandra</a> and
+                    <a href="http://hyperdex.org/">HyperDex</a>.
+                    I wrote a blog post about my research experience and result. You can find it
+                    <a href="http://dmfcfpr.blogspot.com/">here</a>.
+                </p>
+            </div>
+        </div>
+
+
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Related Projects</h3>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                <a href="#">
+                    <img class="img-responsive portfolio-item" src="http://placehold.it/500x300" alt="">
+                </a>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
