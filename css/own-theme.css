@@ -22,7 +22,7 @@
     display: inline;
 }
 
-#flickr-exp, #flickr-icon, #sampa-exp, #sampa, #contact, #personal-info, .contactInfoImg {
+#flickr-exp, #flickr-icon, #sampa-exp, #sampa, #contact, #personal-info, .contactInfoImg, #resume, #resume-pre, #contact-pre {
     float: left;
 }
 
@@ -50,4 +50,13 @@
 
 p {
     font-size: 12pt;
+}
+
+.contactInfoImg:hover {
+    opacity: 0.4;
+    opacity: 0.4;
+}
+
+#resume-pre, #contact-pre {
+    margin-top: 30px;
 }
