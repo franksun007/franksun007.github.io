@@ -7,7 +7,7 @@
     float: right;
 }
 
-#flickr, #cse {
+#flickr, #cse, #germa {
     width: 250px;
     height: 250px;
     margin-top: 30px;
@@ -33,7 +33,7 @@
     margin-top: 10px;
 }
 
-#flickr-header, #sampa-header {
+#flickr-header, #sampa-header, #germa-header {
     clear: both;
     display: inline-block;
 }
@@ -59,4 +59,9 @@ p {
 
 #resume-pre, #contact-pre {
     margin-top: 30px;
+}
+
+.container {
+    margin-left: 70px;
+    margin-right: 70px;
 }
